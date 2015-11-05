@@ -1,0 +1,44 @@
+max{0, d + g(H - h1)}
+
+That's the formula the bus uses to determine how long to wait at a control point.
+
+d = 
+d > is the average delay at equalibrium
+tested in chicago to be 5.8 minutes - or approximately half of a natural headway
+
+hn = 
+distance to trailing bus & average velocity
+hn = d / s = distance / average speed
+
+H = 
+target headway 
+
+h1 = 
+forward headway of the arriving bus
+
+g = 
+control parameter 
+> 0
+
+Best performing for Chicogo Bus route: 
+
+d = 5.8
+g = 0.8
+h = 7
+
+
+Some details about another bus line for reference:
+
+Scheduled time: 
+eastbound: 75 minutes
+westbound: 65 minutes
+65 + 75 = 140 minutes
+
+Rountrip time / number of busses = natural headway ~ scheduled headway
+
+140 / 22 = 6.36 ~ 7 which is the scheduled headway
+
+Self equalizing headway control: 
+
+beta = 6.0 minutes
+alpha = 0.55 
