@@ -8,7 +8,6 @@ from FlaskWebProject import app
 from formula import *
 
 @app.route('/')
-@app.route('/home')
 def home():
     """Renders the home page."""
     return render_template(
