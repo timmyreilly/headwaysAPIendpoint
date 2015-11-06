@@ -42,3 +42,8 @@ Self equalizing headway control:
 
 beta = 6.0 minutes
 alpha = 0.55 
+
+
+If its working...
+
+http://headwaysapi.azurewebsites.net/chitown/10/10 

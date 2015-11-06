@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - My Flask Application</title>
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
 </head>
 
 <body>
@@ -16,7 +17,35 @@
     </code>
     <p> eg. </p>
     <code>
-        http://localhost:5555/chitown/10/20
+        http:/headwaysapi.azurewebsites.net/chitown/10/20
     </code>
+    
+    <p> For the compmlete generic use this uri: </p>
+    <code> 
+        url: /host/generic/distance_to_bus_ahead/average_velocity/dee/gee/aych/
+    </code>
+    <p> eg. </p>
+    <code>
+        http:/headwaysapi.azurewebsites.net/generic/10/10/5.8/0.8/7/
+    </code>
+    
+    
+    <div id="spinner"></div>
+    <script>
+    $('#spinner').velocity({
+        rotateZ: '360deg'
+        }, {
+            duration: 800,
+            easing: 'linear',
+            loop: true
+        });
+    </script>
+        
+    
+
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    <script src="/static/scripts/velocity.min.js"></script>          
 </body>
 

@@ -20,3 +20,13 @@ def home():
 def get_wait(distance, velocity):
     wait = chi_town_wait(distance, velocity)
     return jsonify({'wait': wait})
+    
+@app.route('/float/<float:distance>/<float:velocity>', methods=['GET'])
+def get_float(distance, velocity):
+    wait = chi_town_wait(distance, velocity)
+    return jsonify({'wait': wait})
+    
+# @app.route('/generic/<int:distance>/<int:velocity/<float:d>/<float:g>/<float:h>/', methods=['GET'])
+# def get_generic(distance, velocity, d, g, h):
+#     wait = whats_the_wait(distance, velocity, d, g, h)
+#     return jsonify({'wait': wait})

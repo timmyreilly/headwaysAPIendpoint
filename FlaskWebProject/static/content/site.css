@@ -1,3 +1,11 @@
 h1 {
 	color: blue;
 }
+
+#spinner {
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #abc;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
